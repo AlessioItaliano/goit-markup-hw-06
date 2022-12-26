@@ -689,6 +689,8 @@ p {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: var(--footer-subscription-box-bg);
   border-radius: 4px;
+  color: var(--primery-white-color);
+  letter-spacing: 0.03em;
 }
 
 .footer-subscription-btn {
@@ -739,11 +741,11 @@ p {
   max-width: 528px;
   height: 100%;
   max-height: 581px;
+  padding: 40px;
 
   background-color: var(--primery-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  overflow-y: auto;
 }
 
 .modal-close-btn {
@@ -768,10 +770,6 @@ p {
   fill: var(--accent-color);
 }
 
-.modal-group {
-  padding: 40px;
-}
-
 .modal-title {
   margin-bottom: 12px;
 
@@ -785,6 +783,7 @@ p {
 /* Модальні питання */
 
 .form-field-label {
+  display: block;
   margin-bottom: 4px;
 
   font-size: 12px;
@@ -859,7 +858,12 @@ p {
   margin-bottom: 10px;
 }
 
+.modal-item:last-child {
+  margin-bottom: 0;
+}
+
 textarea {
+  display: block;
   resize: none;
 }
 
@@ -877,7 +881,7 @@ textarea {
 
 .checkbox-icon {
   position: absolute;
-  margin: 5px 7px 4px 0;
+  margin: 5px 7px 4px 13px;
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
   fill: transparent;
@@ -894,7 +898,8 @@ textarea {
 
 .checkbox-description {
   position: relative;
-  padding-left: 23px;
+  padding-left: 36px;
+  margin-right: auto;
 
   font-size: 14px;
   line-height: 1.71em;
